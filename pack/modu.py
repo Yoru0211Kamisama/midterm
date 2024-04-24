@@ -204,7 +204,7 @@ def query_record():                                                             
         if not records:
             print('找不到符合條件的記錄')
         else:
-            print('|  title  |   author   |  publisher  |   year  |')
+            print('|     書名     |     作者     |       出版社       |    年分   |')
             for record in records:
                 print(f'|{record[1]:<10}|{record[2]:<12}|{record[3]:<13}|{record[4]:<8}|')
 
@@ -227,7 +227,7 @@ def list_records():                                                             
         conn.close()
 
         # 顯示記錄表格
-        print('|  title  |   author   |  publisher  |   year  |')
+        print('|     書名     |     作者     |       出版社       |    年分   |')
         for record in records:
             print(f'|{record[1]:<10}|{record[2]:<12}|{record[3]:<13}|{record[4]:<8}|')
 
