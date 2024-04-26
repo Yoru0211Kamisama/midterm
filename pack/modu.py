@@ -145,7 +145,7 @@ def delete_record():                                                            
         conn.close()
 
     except Exception as e:
-        print('刪除記錄時發生錯誤...')
+        print('=>給定的條件不足，無法進行刪除作業')
         print(f'錯誤訊息：{str(e)}')
 
 
@@ -181,7 +181,7 @@ def modify_record():                                                            
         conn.close()
 
     except Exception as e:
-        print('修改記錄時發生錯誤...')
+        print('=>給定的資料不足，無法進行修改作業')
         print(f'錯誤訊息：{str(e)}')
 
 def query_record():                                                                        #主程式選單4   查詢紀錄
