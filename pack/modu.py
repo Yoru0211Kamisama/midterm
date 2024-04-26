@@ -118,7 +118,7 @@ def add_record():                                                               
         print('異動 1 記錄')
 
     except Exception as e:
-        print('添加記錄時發生錯誤...')
+        print('=>給定的條件不足，無法進行新增作業')
         print(f'錯誤訊息：{str(e)}')
 
 
